@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.awt.*;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +31,12 @@ public class MasterPage {
 
     @FindBy(xpath = "//span[text()='Frames']")
     protected WebElement framesButton;
+
+    @FindBy(xpath = "//h5")
+    protected List<WebElement> menuItem;
+
+    @FindBy(xpath = "//span[@class='text']")
+    protected List<WebElement> subMenuItem;
 
     public MasterPage(WebDriver driver) {
         this.driver = driver;
@@ -135,5 +140,22 @@ public class MasterPage {
 
     public void clickFramesButton() {
         click(framesButton);
+    }
+
+    public void selectMenuItemByText(List<WebElement> menuItem, String menuName) {
+        for (WebElement webElement : menuItem) {
+            if (getTextFromElement(webElement).equals(menuName)) {
+                click(webElement);
+                break;
+            }
+        }
+    }
+
+    public void goToMenuItem(String menuName) {
+        selectMenuItemByText(menuItem, menuName);
+    }
+
+    public void goToSubMenuItem(String subMenuName) {
+        selectMenuItemByText(subMenuItem, subMenuName);
     }
 }

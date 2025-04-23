@@ -14,9 +14,11 @@ public class BrowserWindowsTabsTests extends BaseTest {
         Assert.assertTrue(browserWindowsTabsPage.isAlertsFrameAndWindowsButtonDisplayed());
         Assert.assertEquals(browserWindowsTabsPage.getTextFromAlertsFrameAndWindowsButton(), "Alerts, Frame & Windows");
         browserWindowsTabsPage.scrollToAlertsFrameAndWindowsButton();
-        browserWindowsTabsPage.clickAlertsFrameAndWindowsButton();
+        browserWindowsTabsPage.goToMenuItem("Alerts, Frame & Windows");
+        //browserWindowsTabsPage.clickAlertsFrameAndWindowsButton();
         Assert.assertEquals(browserWindowsTabsPage.getTextFromBrowserWindowsButton(),"Browser Windows");
-        browserWindowsTabsPage.clickBrowserWindowsButton();
+        browserWindowsTabsPage.goToSubMenuItem("Browser Windows");
+        //browserWindowsTabsPage.clickBrowserWindowsButton();
         Assert.assertTrue(browserWindowsTabsPage.isBrowserWindowsHeaderDisplayed());
         Assert.assertEquals(browserWindowsTabsPage.getTextFromBrowserWindowsHeader(),"Browser Windows");
         browserWindowsTabsPage.clickNewTabButton();

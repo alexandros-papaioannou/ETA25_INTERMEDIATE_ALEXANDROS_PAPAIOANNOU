@@ -14,9 +14,11 @@ public class FramesTests extends BaseTest {
         Assert.assertTrue(framesPage.isAlertsFrameAndWindowsButtonDisplayed());
         Assert.assertEquals(framesPage.getTextFromAlertsFrameAndWindowsButton(), "Alerts, Frame & Windows");
         framesPage.scrollToAlertsFrameAndWindowsButton();
-        framesPage.clickAlertsFrameAndWindowsButton();
+        framesPage.goToMenuItem("Alerts, Frame & Windows");
+        //framesPage.clickAlertsFrameAndWindowsButton();
         Assert.assertEquals(framesPage.getTextFromFramesButton(), "Frames");
-        framesPage.clickFramesButton();
+        framesPage.goToSubMenuItem("Frames");
+        //framesPage.clickFramesButton();
         Assert.assertTrue(framesPage.isFramesHeaderDisplayed());
         Assert.assertEquals(framesPage.getTextFromFramesHeader(), "Frames");
         Assert.assertTrue(framesPage.isFramesDescriptionDisplayed());

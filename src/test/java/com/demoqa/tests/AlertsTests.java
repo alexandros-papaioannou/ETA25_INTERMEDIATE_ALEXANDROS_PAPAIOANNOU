@@ -14,9 +14,11 @@ public class AlertsTests extends BaseTest {
         Assert.assertTrue(alertsPage.isAlertsFrameAndWindowsButtonDisplayed());
         Assert.assertEquals(alertsPage.getTextFromAlertsFrameAndWindowsButton(), "Alerts, Frame & Windows");
         alertsPage.scrollToAlertsFrameAndWindowsButton();
-        alertsPage.clickAlertsFrameAndWindowsButton();
+        alertsPage.goToMenuItem("Alerts, Frame & Windows");
+        //alertsPage.clickAlertsFrameAndWindowsButton();
         Assert.assertEquals(alertsPage.getTextFromAlertsButton(),"Alerts");
-        alertsPage.clickAlertsButton();
+        alertsPage.goToSubMenuItem("Alerts");
+        //alertsPage.clickAlertsButton();
         Assert.assertTrue(alertsPage.isAlertsHeaderDisplayed());
         Assert.assertEquals(alertsPage.getTextFromAlertsHeader(),"Alerts");
         Assert.assertEquals(alertsPage.getTextFromClickMeAlertButtonLabel(),"Click Button to see alert");
