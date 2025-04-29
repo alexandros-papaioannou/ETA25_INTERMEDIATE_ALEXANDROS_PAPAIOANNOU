@@ -23,6 +23,12 @@ public class MasterPage {
     @FindBy(xpath = "//h5[text()='Alerts, Frame & Windows']")
     protected WebElement alertsFrameAndWindowsButton;
 
+    @FindBy(xpath = "//h5[text()='Forms']")
+    protected WebElement formsButton;
+
+    @FindBy(xpath = "//span[text()='Practice Form']")
+    protected WebElement practiceFormButton;
+
     @FindBy(xpath = "//span[text()='Alerts']")
     protected WebElement alertsButton;
 
@@ -85,12 +91,28 @@ public class MasterPage {
         return isWebElementDisplayed(alertsFrameAndWindowsButton);
     }
 
+    public boolean isFormsButtonDisplayed() {
+        return isWebElementDisplayed(formsButton);
+    }
+
     public String getTextFromAlertsFrameAndWindowsButton() {
         return getTextFromElement(alertsFrameAndWindowsButton);
     }
 
+    public String getTextFromFormsButton() {
+        return  getTextFromElement(formsButton);
+    }
+
+    public String getTextFromPracticeFormButton() {
+        return getTextFromElement(practiceFormButton);
+    }
+
     public void scrollToAlertsFrameAndWindowsButton() {
         scrollToElement(driver, alertsFrameAndWindowsButton);
+    }
+
+    public void scrollToFormsButton() {
+        scrollToElement(driver, formsButton);
     }
 
     public void clickAlertsFrameAndWindowsButton() {
