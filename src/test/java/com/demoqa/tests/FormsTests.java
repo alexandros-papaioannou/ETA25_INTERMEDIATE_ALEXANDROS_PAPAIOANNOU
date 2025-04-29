@@ -5,6 +5,9 @@ import com.demoqa.pages.FormsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FormsTests extends BaseTest {
 
     @Test
@@ -49,5 +52,12 @@ public class FormsTests extends BaseTest {
         Assert.assertEquals(formsPage.getTextFromDateOfBirthLabel(), "Date of Birth");
         Assert.assertTrue(formsPage.isDateOfBirthFieldDisplayed());
         formsPage.setDateOfBirth("February", "1987", 25);
+        Assert.assertTrue(formsPage.isSubjectsLabelDisplayed());
+        Assert.assertEquals(formsPage.getTextFromSubjectsLabel(), "Subjects");
+        Assert.assertTrue(formsPage.isSubjectsFieldDisplayed());
+        List<String> subjects = new ArrayList<>();
+        subjects.add("Maths");
+        subjects.add("Economics");
+        formsPage.setSubjectsField(subjects);
     }
 }

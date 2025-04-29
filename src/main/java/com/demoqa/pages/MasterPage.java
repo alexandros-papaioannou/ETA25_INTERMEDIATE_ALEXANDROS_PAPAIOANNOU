@@ -1,14 +1,13 @@
 package com.demoqa.pages;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.security.Key;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +15,7 @@ import java.util.List;
 public class MasterPage {
 
     protected WebDriver driver;
+    private WebDriverWait wait;
 
     @FindBy(xpath = "//img[@src='/images/Toolsqa.jpg']")
     protected WebElement loginPageBanner;
@@ -46,6 +46,7 @@ public class MasterPage {
 
     public MasterPage(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         PageFactory.initElements(driver, this);
     }
 
@@ -68,6 +69,10 @@ public class MasterPage {
 
     public boolean isWebElementDisplayed(WebElement element) {
         return element.isDisplayed();
+    }
+
+    public void waitForElementToBeVisible(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
 
     public void scrollToElement(WebDriver driver, WebElement element) {
@@ -179,5 +184,12 @@ public class MasterPage {
 
     public void goToSubMenuItem(String subMenuName) {
         selectMenuItemByText(subMenuItem, subMenuName);
+    }
+
+    public void fillValues(WebElement element, List<String> values) {
+        for (String value : values) {
+            element.sendKeys(value);
+            element.sendKeys(Keys.ENTER);
+        }
     }
 }

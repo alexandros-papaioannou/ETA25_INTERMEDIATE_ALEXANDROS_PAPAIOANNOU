@@ -1,5 +1,6 @@
 package com.demoqa.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -76,6 +77,12 @@ public class FormsPage extends MasterPage {
     @FindBy(xpath = "//div[contains(concat(' ', normalize-space(@class), ' '), ' react-datepicker__day ') and not(contains(@class, 'outside-month'))]")
     private List<WebElement> dateOfBirthDaysInAMonth;
 
+    @FindBy(id = "subjects-label")
+    private WebElement subjectsLabel;
+
+    @FindBy(id = "subjectsInput")
+    private WebElement subjectsField;
+
     public boolean isFormsHeaderDisplayed() {
         return isWebElementDisplayed(formsTitle);
     }
@@ -136,6 +143,14 @@ public class FormsPage extends MasterPage {
         return isWebElementDisplayed(dateOfBirthField);
     }
 
+    public boolean isSubjectsLabelDisplayed() {
+        return isWebElementDisplayed(subjectsLabel);
+    }
+
+    public boolean isSubjectsFieldDisplayed() {
+        return isWebElementDisplayed(subjectsField);
+    }
+
     public String getTextFromFormsHeader() {
         return getTextFromElement(formsTitle);
     }
@@ -174,6 +189,10 @@ public class FormsPage extends MasterPage {
 
     public String getTextFromDateOfBirthLabel() {
         return getTextFromElement(dateOfBirthLabel);
+    }
+
+    public String getTextFromSubjectsLabel() {
+        return getTextFromElement(subjectsLabel);
     }
 
     public void setFirstNameField(String text) {
@@ -222,6 +241,10 @@ public class FormsPage extends MasterPage {
         click(dateOfBirthYearPick);
     }
 
+    public void clickSubjectsField() {
+        click(subjectsField);
+    }
+
     public void setDateOfBirth(String monthText, String yearText, int day) {
         clickDateOfBirthField();
 
@@ -241,4 +264,9 @@ public class FormsPage extends MasterPage {
         }
     }
 
+    public void setSubjectsField(List<String> list) {
+        clickSubjectsField();
+        fillValues(subjectsField, list);
+    }
 }
+
