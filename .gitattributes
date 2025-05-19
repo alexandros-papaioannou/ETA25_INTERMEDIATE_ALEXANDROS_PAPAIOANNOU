@@ -1,0 +1,10 @@
+# Ignore test reports and build directories
+/reports/* linguist-generated
+/build/* linguist-generated
+/out/* linguist-generated
+
+# Ignore any file types not related to Java
+*.xml linguist-generated
+*.html linguist-generated
+*.js linguist-generated
+*.json linguist-generated
