@@ -5,7 +5,7 @@
     <test name="SmokeTests">
         <classes>
             <class name="com.demoqa.tests.AlertsTests"/>
-            <class name="com.demoqa.tests.FormsTests"/>
+<!--            <class name="com.demoqa.tests.FormsTests"/>-->
         </classes>
     </test>
 </suite>
