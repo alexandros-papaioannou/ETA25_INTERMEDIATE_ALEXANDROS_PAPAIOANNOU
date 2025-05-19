@@ -1,0 +1,5 @@
+com\demoqa\base\BaseTest.class
+com\demoqa\tests\FormsTests.class
+com\demoqa\tests\BrowserWindowsTabsTests.class
+com\demoqa\tests\AlertsTests.class
+com\demoqa\tests\FramesTests.class

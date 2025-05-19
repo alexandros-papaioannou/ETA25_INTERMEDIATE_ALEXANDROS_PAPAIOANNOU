@@ -1,0 +1,7 @@
+com\demoqa\pages\FormsPage.class
+com\demoqa\pages\MasterPage.class
+com\demoqa\utils\ConfigReader.class
+com\demoqa\pages\AlertsPage.class
+com\demoqa\pages\BrowserWindowsTabsPage.class
+com\demoqa\pages\FramesPage.class
+com\demoqa\utils\WebDriverManager.class
