@@ -32,4 +32,4 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Run automation tests
-      run: mvn clean install -DisRemote=true -Dbrowser=${{github.event.inputs.browser}} -DsuiteXmlFile=suites/${{github.event.inputs.suite}} -PCustomSuite -X
+      run: mvn clean install -DisRemote=true -Dbrowser=${{github.event.inputs.browser}} -DsuiteXmlFile=suites/${{github.event.inputs.suite}} -PCustomSuite
