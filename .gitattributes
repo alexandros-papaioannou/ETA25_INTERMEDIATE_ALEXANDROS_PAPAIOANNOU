@@ -8,3 +8,4 @@
 *.html linguist-generated
 *.js linguist-generated
 *.json linguist-generated
+*.css linguist-generated
