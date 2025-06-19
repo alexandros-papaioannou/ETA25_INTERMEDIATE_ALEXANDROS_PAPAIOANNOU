@@ -1,7 +1,7 @@
-2025-06-19 16:00:14 INFO  LoggerUtility:18 - ############## Execution started: BrowserWindowsTabsTests ##############
-2025-06-19 16:00:23 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> ###### The browser was opened successfully ######
-2025-06-19 16:00:23 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> User scrolled to element Alerts, Frame & Windows
-2025-06-19 16:00:23 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Alerts, Frame & Windows
-2025-06-19 16:00:23 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Browser Windows
-2025-06-19 16:00:24 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> ###### The browser was closed successfully ######
-2025-06-19 16:00:24 INFO  LoggerUtility:22 - ############## Execution finished: BrowserWindowsTabsTests ##############
+2025-06-19 18:07:27 INFO  LoggerUtility:18 - ############## Execution started: BrowserWindowsTabsTests ##############
+2025-06-19 18:07:32 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> ###### The browser was opened successfully ######
+2025-06-19 18:07:32 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> User scrolled to element Alerts, Frame & Windows
+2025-06-19 18:07:32 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Alerts, Frame & Windows
+2025-06-19 18:07:32 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Browser Windows
+2025-06-19 18:07:33 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-2:utils.logger.LoggerUtility:infoLog ====> ###### The browser was closed successfully ######
+2025-06-19 18:07:33 INFO  LoggerUtility:22 - ############## Execution finished: BrowserWindowsTabsTests ##############

@@ -1,15 +1,6 @@
-2025-06-19 16:00:14 INFO  LoggerUtility:18 - ############## Execution started: FormsTests ##############
-2025-06-19 16:00:24 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:infoLog ====> ###### The browser was opened successfully ######
-2025-06-19 16:00:24 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Forms
-2025-06-19 16:00:24 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Practice Form
-2025-06-19 16:00:27 ERROR LoggerUtility:30 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:errorLog ====> element click intercepted: Element <label title="" for="hobbies-checkbox-1" class="custom-control-label">...</label> is not clickable at point (351, 422). Other element would receive the click: <div>...</div>
-  (Session info: chrome=137.0.7151.104)
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61e7cba063e662b5bcad7e711f5d5dc0, clickElement {id=f.958D4AE0777095DAAF5E82D7502A83CB.d.EF847FBCB5C4536EE89D6DC4C4DE9663.e.146}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\PALEXA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60162/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (61e7cba063e662b5bcad7e711f5d5dc0)] -> xpath: //label[text()='Sports']]
-Session ID: 61e7cba063e662b5bcad7e711f5d5dc0
-2025-06-19 16:00:27 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:infoLog ====> ###### The browser was closed successfully ######
-2025-06-19 16:00:27 INFO  LoggerUtility:22 - ############## Execution finished: FormsTests ##############
+2025-06-19 18:07:27 INFO  LoggerUtility:18 - ############## Execution started: FormsTests ##############
+2025-06-19 18:07:32 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:infoLog ====> ###### The browser was opened successfully ######
+2025-06-19 18:07:32 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Forms
+2025-06-19 18:07:32 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Practice Form
+2025-06-19 18:07:37 INFO  LoggerUtility:26 - TestNG-test-RegressionTests-3:utils.logger.LoggerUtility:infoLog ====> ###### The browser was closed successfully ######
+2025-06-19 18:07:37 INFO  LoggerUtility:22 - ############## Execution finished: FormsTests ##############
