@@ -4,6 +4,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.logger.LoggerUtility;
 
 public class AlertsPage extends MasterPage {
 
@@ -102,6 +103,7 @@ public class AlertsPage extends MasterPage {
         clickClickMeAlertButton();
         Alert alertNormal = driver.switchTo().alert();
         alertNormal.accept();
+        LoggerUtility.infoLog("User clicked on " + clickMeAlertButton.getText() + " 1.");
     }
 
     public String getTextFromClickMeDelayAlertButtonLabel() {
@@ -131,6 +133,7 @@ public class AlertsPage extends MasterPage {
         clickClickMeConfirmBoxButton();
         Alert alertConfirmBox = driver.switchTo().alert();
         alertConfirmBox.dismiss();
+        LoggerUtility.infoLog("User clicked on " + clickMeConfirmBoxButton.getText() + " 2.");
     }
 
     public String getTextFromClickMeConfirmBoxButtonMessage() {

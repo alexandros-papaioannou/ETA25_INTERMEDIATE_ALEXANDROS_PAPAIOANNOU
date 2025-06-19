@@ -1,11 +1,11 @@
 package com.demoqa.tests;
 
-import com.demoqa.base.BaseTest;
 import com.demoqa.pages.AlertsPage;
+import com.demoqa.base.Hooks;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AlertsTests extends BaseTest {
+public class AlertsTests extends Hooks {
 
     @Test
     public void allAlerts() {

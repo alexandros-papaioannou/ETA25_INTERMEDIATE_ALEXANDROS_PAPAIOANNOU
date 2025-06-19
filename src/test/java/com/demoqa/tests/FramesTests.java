@@ -1,11 +1,11 @@
 package com.demoqa.tests;
 
-import com.demoqa.base.BaseTest;
 import com.demoqa.pages.FramesPage;
+import com.demoqa.base.Hooks;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FramesTests extends BaseTest {
+public class FramesTests extends Hooks {
 
     @Test
     public void framesTests() {

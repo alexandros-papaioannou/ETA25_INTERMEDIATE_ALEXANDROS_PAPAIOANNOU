@@ -1,11 +1,11 @@
 package com.demoqa.tests;
 
-import com.demoqa.base.BaseTest;
 import com.demoqa.pages.BrowserWindowsTabsPage;
+import com.demoqa.base.Hooks;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BrowserWindowsTabsTests extends BaseTest {
+public class BrowserWindowsTabsTests extends Hooks {
 
     @Test
     public void browserWindowsTabsTests() {

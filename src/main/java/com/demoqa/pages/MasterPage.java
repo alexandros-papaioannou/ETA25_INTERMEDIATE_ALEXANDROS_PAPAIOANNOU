@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.logger.LoggerUtility;
 
 import java.security.Key;
 import java.time.Duration;
@@ -114,6 +115,7 @@ public class MasterPage {
 
     public void scrollToAlertsFrameAndWindowsButton() {
         scrollToElement(driver, alertsFrameAndWindowsButton);
+        LoggerUtility.infoLog("User scrolled to element " + alertsFrameAndWindowsButton.getText());
     }
 
     public void scrollToFormsButton() {
@@ -173,6 +175,7 @@ public class MasterPage {
         for (WebElement webElement : menuItem) {
             if (getTextFromElement(webElement).equals(menuName)) {
                 click(webElement);
+                LoggerUtility.infoLog("User navigated on menu " + menuName);
                 break;
             }
         }

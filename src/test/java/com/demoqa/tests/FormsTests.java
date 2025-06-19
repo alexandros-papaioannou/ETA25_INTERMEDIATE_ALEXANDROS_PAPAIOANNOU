@@ -1,6 +1,6 @@
 package com.demoqa.tests;
 
-import com.demoqa.base.BaseTest;
+import com.demoqa.base.Hooks;
 import com.demoqa.pages.FormsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FormsTests extends BaseTest {
+public class FormsTests extends Hooks {
 
     @Test
     public void allForms() {
@@ -138,6 +138,7 @@ public class FormsTests extends BaseTest {
         Assert.assertEquals(formsPage.getTextFromModalStateCityValue(), "Rajasthan Jaiselmer");
         formsPage.scrollToCloseModalButton();
         Assert.assertEquals(formsPage.getTextFromCloseModalButton(), "Close");
+        Assert.assertTrue(formsPage.isModalWindowDisplayed());
         formsPage.clickCloseModalButton();
     }
 }
