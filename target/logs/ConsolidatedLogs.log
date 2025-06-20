@@ -1,0 +1,7 @@
+Contents of file FormsTests.log
+2025-06-20 13:38:02 INFO  LoggerUtility:18 - ############## Execution started: FormsTests ##############
+2025-06-20 13:38:06 INFO  LoggerUtility:26 - main:utils.logger.LoggerUtility:infoLog ====> ###### The browser was opened successfully ######
+2025-06-20 13:38:06 INFO  LoggerUtility:26 - main:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Forms
+2025-06-20 13:38:07 INFO  LoggerUtility:26 - main:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Practice Form
+2025-06-20 13:38:10 INFO  LoggerUtility:26 - main:utils.logger.LoggerUtility:infoLog ====> ###### The browser was closed successfully ######
+2025-06-20 13:38:10 INFO  LoggerUtility:22 - ############## Execution finished: FormsTests ##############

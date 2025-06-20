@@ -5,6 +5,9 @@ import com.demoqa.pages.FormsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,7 +81,8 @@ public class FormsTests extends Hooks {
         Assert.assertTrue(formsPage.isPictureLabelDisplayed());
         Assert.assertEquals(formsPage.getTextFromPictureLabel(), "Picture");
         Assert.assertTrue(formsPage.isUploadPictureButtonDisplayed());
-        String filePath = "C:\\Users\\palexandros\\IdeaProjects\\ETA25_INTERMEDIATE_ALEXANDROS_PAPAIOANNOU\\src\\main\\java\\resources\\TestUploadImage.jpg";
+        //String filePath = "C:\\Users\\palexandros\\IdeaProjects\\ETA25_INTERMEDIATE_ALEXANDROS_PAPAIOANNOU\\src\\main\\java\\resources\\TestUploadImage.jpg";
+        String filePath = Paths.get("src/test/java/resources/TestUploadImage.jpg").toAbsolutePath().toString();
         formsPage.uploadPicture(filePath);
         String uploadedFilePath = formsPage.getUploadedFilePath();
         Assert.assertTrue(uploadedFilePath.endsWith("TestUploadImage.jpg"), "File upload failed!");
