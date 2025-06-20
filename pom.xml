@@ -84,7 +84,7 @@
                     <configuration>
                         <systemPropertyVariables>
                             <browser>chrome</browser>
-                            <isRemote>false</isRemote>
+                            <isRemote>true</isRemote>
                         </systemPropertyVariables>
                     </configuration>
                 </plugin>

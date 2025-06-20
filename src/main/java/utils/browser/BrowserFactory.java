@@ -17,7 +17,7 @@ public class BrowserFactory {
         ConfigXmlReader configXmlReader = XmlConfig.createConfigXml(ConfigXmlReader.class);
 
         if (Boolean.parseBoolean(isRemote)) {
-            configXmlReader.driverXmlReader.headless = "--headless";
+            configXmlReader.driverXmlReader.headless = "--headless=new";
         } else {
             browser = configXmlReader.driverXmlReader.localBrowser;
         }

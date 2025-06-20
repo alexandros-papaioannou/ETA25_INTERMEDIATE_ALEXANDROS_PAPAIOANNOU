@@ -29,7 +29,7 @@ public class Hooks extends BaseTest {
         if (result.getStatus() == ITestResult.FAILURE) {
             String errorMessage = result.getThrowable().getMessage();
             LoggerUtility.errorLog(result.getThrowable().getMessage());
-            ExtentUtility.attachLog(testName, errorMessage, getDriver());
+            ExtentUtility.attachLog(testName, errorMessage, driver);
         }
         tearDown();
         utils.logger.LoggerUtility.endTestCase(testName);

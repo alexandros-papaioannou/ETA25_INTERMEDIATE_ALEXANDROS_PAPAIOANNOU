@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-20T12:55:41 EEST" name="Surefire suite" finished-at="2025-06-20T12:56:03 EEST" duration-ms="22121">
+    <groups>
+    </groups>
+    <test started-at="2025-06-20T12:55:41 EEST" name="Surefire test" finished-at="2025-06-20T12:56:03 EEST" duration-ms="22121">
+      <class name="com.demoqa.tests.FramesTests">
+        <test-method is-config="true" signature="prepareEnvironment()[pri:0, instance:com.demoqa.tests.FramesTests@3a079870]" started-at="2025-06-20T12:56:00 EEST" name="prepareEnvironment" finished-at="2025-06-20T12:56:03 EEST" duration-ms="3044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareEnvironment -->
+        <test-method signature="framesTests()[pri:0, instance:com.demoqa.tests.FramesTests@3a079870]" started-at="2025-06-20T12:56:03 EEST" name="framesTests" finished-at="2025-06-20T12:56:03 EEST" duration-ms="379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- framesTests -->
+        <test-method is-config="true" signature="clearEnvironment(org.testng.ITestResult)[pri:0, instance:com.demoqa.tests.FramesTests@3a079870]" started-at="2025-06-20T12:56:03 EEST" name="clearEnvironment" finished-at="2025-06-20T12:56:03 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=framesTests status=SUCCESS method=FramesTests.framesTests()[pri:0, instance:com.demoqa.tests.FramesTests@3a079870] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearEnvironment -->
+      </class> <!-- com.demoqa.tests.FramesTests -->
+      <class name="com.demoqa.tests.FormsTests">
+        <test-method is-config="true" signature="prepareEnvironment()[pri:0, instance:com.demoqa.tests.FormsTests@f2f2cc1]" started-at="2025-06-20T12:55:54 EEST" name="prepareEnvironment" finished-at="2025-06-20T12:55:57 EEST" duration-ms="3159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareEnvironment -->
+        <test-method signature="allForms()[pri:0, instance:com.demoqa.tests.FormsTests@f2f2cc1]" started-at="2025-06-20T12:55:57 EEST" name="allForms" finished-at="2025-06-20T12:56:00 EEST" duration-ms="2638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allForms -->
+        <test-method is-config="true" signature="clearEnvironment(org.testng.ITestResult)[pri:0, instance:com.demoqa.tests.FormsTests@f2f2cc1]" started-at="2025-06-20T12:56:00 EEST" name="clearEnvironment" finished-at="2025-06-20T12:56:00 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=allForms status=SUCCESS method=FormsTests.allForms()[pri:0, instance:com.demoqa.tests.FormsTests@f2f2cc1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearEnvironment -->
+      </class> <!-- com.demoqa.tests.FormsTests -->
+      <class name="com.demoqa.tests.AlertsTests">
+        <test-method is-config="true" signature="initialiseTestReport()[pri:0, instance:com.demoqa.tests.AlertsTests@21507a04]" started-at="2025-06-20T12:55:41 EEST" name="initialiseTestReport" finished-at="2025-06-20T12:55:41 EEST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseTestReport -->
+        <test-method is-config="true" signature="prepareEnvironment()[pri:0, instance:com.demoqa.tests.AlertsTests@21507a04]" started-at="2025-06-20T12:55:41 EEST" name="prepareEnvironment" finished-at="2025-06-20T12:55:45 EEST" duration-ms="3574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareEnvironment -->
+        <test-method signature="allAlerts()[pri:0, instance:com.demoqa.tests.AlertsTests@21507a04]" started-at="2025-06-20T12:55:45 EEST" name="allAlerts" finished-at="2025-06-20T12:55:50 EEST" duration-ms="5645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allAlerts -->
+        <test-method is-config="true" signature="clearEnvironment(org.testng.ITestResult)[pri:0, instance:com.demoqa.tests.AlertsTests@21507a04]" started-at="2025-06-20T12:55:50 EEST" name="clearEnvironment" finished-at="2025-06-20T12:55:50 EEST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=allAlerts status=SUCCESS method=AlertsTests.allAlerts()[pri:0, instance:com.demoqa.tests.AlertsTests@21507a04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearEnvironment -->
+        <test-method is-config="true" signature="generateConsolidatedLogs()[pri:0, instance:com.demoqa.tests.AlertsTests@21507a04]" started-at="2025-06-20T12:56:03 EEST" name="generateConsolidatedLogs" finished-at="2025-06-20T12:56:04 EEST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateConsolidatedLogs -->
+      </class> <!-- com.demoqa.tests.AlertsTests -->
+      <class name="com.demoqa.tests.BrowserWindowsTabsTests">
+        <test-method is-config="true" signature="prepareEnvironment()[pri:0, instance:com.demoqa.tests.BrowserWindowsTabsTests@436a4e4b]" started-at="2025-06-20T12:55:51 EEST" name="prepareEnvironment" finished-at="2025-06-20T12:55:53 EEST" duration-ms="2937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareEnvironment -->
+        <test-method signature="browserWindowsTabsTests()[pri:0, instance:com.demoqa.tests.BrowserWindowsTabsTests@436a4e4b]" started-at="2025-06-20T12:55:53 EEST" name="browserWindowsTabsTests" finished-at="2025-06-20T12:55:54 EEST" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserWindowsTabsTests -->
+        <test-method is-config="true" signature="clearEnvironment(org.testng.ITestResult)[pri:0, instance:com.demoqa.tests.BrowserWindowsTabsTests@436a4e4b]" started-at="2025-06-20T12:55:54 EEST" name="clearEnvironment" finished-at="2025-06-20T12:55:54 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=browserWindowsTabsTests status=SUCCESS method=BrowserWindowsTabsTests.browserWindowsTabsTests()[pri:0, instance:com.demoqa.tests.BrowserWindowsTabsTests@436a4e4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearEnvironment -->
+      </class> <!-- com.demoqa.tests.BrowserWindowsTabsTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

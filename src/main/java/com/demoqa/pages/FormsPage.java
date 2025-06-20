@@ -1,9 +1,6 @@
 package com.demoqa.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -612,7 +609,7 @@ public class FormsPage extends MasterPage {
     }
 
     public void clickCloseModalButton() {
-        //((JavascriptExecutor) driver).executeScript("document.querySelectorAll('iframe, .google-auto-placed, #adplus-anchor').forEach(el => el.remove());");
+        ((JavascriptExecutor) driver).executeScript("document.querySelectorAll('iframe, .google-auto-placed, #adplus-anchor').forEach(el => el.remove());");
         click(closeModalButton);
     }
 
@@ -636,7 +633,7 @@ public class FormsPage extends MasterPage {
     }
 
     public void setSubjectsField(List<String> list) {
-        //clickSubjectsField();
+        clickSubjectsField();
         click(subjectsField);
         fillValues(subjectsField, list);
     }
@@ -672,20 +669,17 @@ public class FormsPage extends MasterPage {
     public void setState(String stateName) {
         scrollToElement(driver, stateDropDown);
         click(stateDropDown);
-        String xpath = String.format("//div[contains(@id, 'react-select-3-option') and text()='%s']", stateName);
-        WebElement stateOption = driver.findElement(By.xpath(xpath));
-        click(stateOption);
+        WebElement stateOption = driver.findElement(By.xpath("//input[contains(@id, 'react-select-3-input')]"));
+        stateOption.sendKeys(stateName);
+        stateOption.sendKeys(Keys.ENTER);
     }
 
     public void setCity(String cityName) {
         click(cityDropDown);
-        String xpath = String.format("//div[contains(@id, 'react-select-4-option') and text()='%s']", cityName);
-        WebElement cityOption = driver.findElement(By.xpath(xpath));
-        click(cityOption);
+        WebElement cityOption = driver.findElement(By.xpath("//input[contains(@id, 'react-select-4-input')]"));
+        cityOption.sendKeys(cityName);
+        cityOption.sendKeys(Keys.ENTER);
     }
 
-//    public void waitForModalWindow() {
-//        waitForElementToBeVisible(modalTitle);
-//    }
 }
 

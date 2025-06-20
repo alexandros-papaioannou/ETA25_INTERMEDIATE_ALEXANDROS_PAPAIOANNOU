@@ -1,7 +1,0 @@
-2025-06-19 18:08:17 INFO  LoggerUtility:18 - ############## Execution started: AlertsTests ##############
-2025-06-19 18:08:20 INFO  LoggerUtility:26 - main:utils.logger.LoggerUtility:infoLog ====> ###### The browser was opened successfully ######
-2025-06-19 18:08:20 INFO  LoggerUtility:26 - main:utils.logger.LoggerUtility:infoLog ====> User scrolled to element Alerts, Frame & Windows
-2025-06-19 18:08:20 INFO  LoggerUtility:26 - main:utils.logger.LoggerUtility:infoLog ====> User navigated on menu Alerts, Frame & Windows
-2025-06-19 18:08:20 ERROR LoggerUtility:30 - main:utils.logger.LoggerUtility:errorLog ====> expected [Alert] but found [Alerts]
-2025-06-19 18:08:22 INFO  LoggerUtility:26 - main:utils.logger.LoggerUtility:infoLog ====> ###### The browser was closed successfully ######
-2025-06-19 18:08:22 INFO  LoggerUtility:22 - ############## Execution finished: AlertsTests ##############

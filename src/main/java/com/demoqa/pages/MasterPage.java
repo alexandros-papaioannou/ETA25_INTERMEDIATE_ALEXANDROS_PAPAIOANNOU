@@ -61,7 +61,8 @@ public class MasterPage {
     }
 
     public void click(WebElement element) {
-        element.click();
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
     }
 
     public String getTextFromElement(WebElement element) {
